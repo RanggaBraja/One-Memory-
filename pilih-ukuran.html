@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilih Ukuran - One Memory</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="checkout-body">
+    <div class="checkout-app-container">
+        <!-- App Header -->
+        <header class="checkout-header">
+            <a href="index.html" class="checkout-back"><i class="ph ph-arrow-left"></i></a>
+            <div class="checkout-logo">One Memory</div>
+            <div class="checkout-avatar">S</div>
+        </header>
+
+        <main class="checkout-content">
+            <h1 class="checkout-title">Pilih ukuran yang sesui untuk mu</h1>
+            <p class="checkout-subtitle">Setiap ukuran memiliki makna tersendiri</p>
+
+            <!-- Mini Box -->
+            <div class="hz-card fade-in" style="cursor: pointer;" onclick="localStorage.setItem('selectedBox', 'mini'); window.location.href='detail-produk.html'">
+                <div class="hz-img">
+                    <img src="assets/mini-box.png" alt="Mini Box" loading="lazy">
+                </div>
+                <div class="hz-info">
+                    <div>
+                        <h3>Mini box</h3>
+                        <p>Cocok untuk hadiah kecil dan momen sederhana</p>
+                        <div class="hz-price">Mulai dari Rp.35.000</div>
+                    </div>
+                    <button class="btn-brown-small" onclick="localStorage.setItem('selectedBox', 'mini'); window.location.href='detail-produk.html'">Lihat Detail</button>
+                </div>
+            </div>
+
+            <!-- Reguler Box -->
+            <div class="hz-card fade-in" style="transition-delay: 0.1s; cursor: pointer;" onclick="localStorage.setItem('selectedBox', 'reguler'); window.location.href='detail-produk.html'">
+                <div class="hz-img">
+                    <img src="assets/reguler-box.png" alt="Reguler Box" loading="lazy">
+                </div>
+                <div class="hz-info">
+                    <div>
+                        <h3>Reguler box</h3>
+                        <p>Pas untuk semua momen spesial</p>
+                        <div class="hz-price">Mulai dari Rp.45.000</div>
+                    </div>
+                    <button class="btn-brown-small" onclick="localStorage.setItem('selectedBox', 'reguler'); window.location.href='detail-produk.html'">Lihat Detail</button>
+                </div>
+            </div>
+
+            <!-- Jumbo Box -->
+            <div class="hz-card fade-in" style="transition-delay: 0.2s; cursor: pointer;" onclick="localStorage.setItem('selectedBox', 'jumbo'); window.location.href='detail-produk.html'">
+                <div class="hz-img">
+                    <img src="assets/jumbo-box.png" alt="Jumbo Box" loading="lazy">
+                </div>
+                <div class="hz-info">
+                    <div>
+                        <h3>Jumbo box</h3>
+                        <p>Lebih besar, lebih lengkap, dan lebih berkesan</p>
+                        <div class="hz-price">Mulai dari Rp.65.000</div>
+                    </div>
+                    <button class="btn-brown-small" onclick="localStorage.setItem('selectedBox', 'jumbo'); window.location.href='detail-produk.html'">Lihat Detail</button>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    
+    <script src="js/checkout.js"></script>
+</body>
+</html>

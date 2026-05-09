@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Foto - One Memory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="checkout-body">
+    <div class="checkout-app-container">
+        <!-- App Header -->
+        <header class="checkout-header">
+            <a href="detail-produk.html" class="checkout-back"><i class="ph ph-arrow-left"></i></a>
+            <div class="checkout-logo">One Memory</div>
+            <div class="checkout-avatar">S</div>
+        </header>
+
+        <main class="checkout-content fade-in">
+            <h1 class="checkout-title" style="margin-bottom: 4px;">Upload Foto</h1>
+            <p class="checkout-subtitle">Upload momen terbaik mu (min, 15 foto)</p>
+
+            <!-- Dropzone -->
+            <div class="upload-dropzone fade-in" id="upload-dropzone">
+                <i class="ph-fill ph-cloud-arrow-up upload-icon"></i>
+                <h4>Klik untuk upload foto</h4>
+                <p style="margin-bottom: 4px; font-weight: 500;">atau drag & drop ke sini</p>
+                <p>JPG, PNG • Maks 10MB per foto</p>
+            </div>
+
+            <!-- Uploaded Grid -->
+            <div class="fade-in">
+                <div class="photo-grid-header">Foto Terpilih (10/15)</div>
+                <div class="selected-photos">
+                    <div class="photo-thumb" style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop');">
+                        <div class="photo-remove"><i class="ph ph-x"></i></div>
+                    </div>
+                    <div class="photo-thumb" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop');">
+                        <div class="photo-remove"><i class="ph ph-x"></i></div>
+                    </div>
+                    <div class="photo-thumb" style="background-image: url('https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop');">
+                        <div class="photo-remove"><i class="ph ph-x"></i></div>
+                    </div>
+                    <div class="photo-thumb" style="background-image: url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=200&auto=format&fit=crop');">
+                        <div class="photo-remove"><i class="ph ph-x"></i></div>
+                    </div>
+                    
+                    <div class="photo-thumb" style="background-image: url('https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=200&auto=format&fit=crop');">
+                        <div class="photo-remove"><i class="ph ph-x"></i></div>
+                    </div>
+                    <div class="photo-thumb" style="background-image: url('https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&w=200&auto=format&fit=crop');">
+                        <div class="photo-remove"><i class="ph ph-x"></i></div>
+                    </div>
+                    <div class="photo-thumb" style="background-image: url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=200&auto=format&fit=crop');">
+                        <div class="photo-remove"><i class="ph ph-x"></i></div>
+                    </div>
+                    <div class="photo-thumb" style="background-image: url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop');">
+                        <div class="photo-remove"><i class="ph ph-x"></i></div>
+                    </div>
+
+                    <div class="photo-thumb" style="background-image: url('https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop');">
+                        <div class="photo-remove"><i class="ph ph-x"></i></div>
+                    </div>
+                    <div class="photo-thumb" style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop');">
+                        <div class="photo-remove"><i class="ph ph-x"></i></div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Sticky Bottom Bar -->
+        <div class="bottom-action-bar bottom-action-single">
+            <button class="btn-brown-large" onclick="window.location.href='review-pesanan.html'">
+                Lanjutkan ke Review
+            </button>
+        </div>
+
+    </div>
+    
+    <script src="js/checkout.js"></script>
+</body>
+</html>

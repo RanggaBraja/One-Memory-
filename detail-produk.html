@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - One Memory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="checkout-body">
+    <div class="checkout-app-container">
+        <!-- App Header -->
+        <header class="checkout-header">
+            <a href="pilih-ukuran.html" class="checkout-back"><i class="ph ph-arrow-left"></i></a>
+            <div class="checkout-logo">One Memory</div>
+            <div class="checkout-avatar">S</div>
+        </header>
+
+        <main class="checkout-content">
+            <!-- Product Gallery Placeholder -->
+            <div class="detail-gallery fade-in">
+                <div class="mg-main"></div>
+            </div>
+
+            <!-- Product Header -->
+            <div class="fade-in">
+                <h1 class="checkout-title" id="product-title">Reguler Box</h1>
+                <p class="checkout-subtitle" id="product-subtitle" style="margin-bottom: 8px;">Pilihan pas untuk semua momen spesial. berisi foto, kartu ucapan, dan aksesoris pilihan</p>
+                <div class="detail-price" id="product-price">Rp 45.000</div>
+            </div>
+
+            <!-- Features Strip -->
+            <div class="feature-strip fade-in">
+                <div class="fs-item">
+                    <i class="ph ph-envelope-simple"></i>
+                    <span>Kartu ucapan</span>
+                </div>
+                <div class="fs-item">
+                    <i class="ph ph-images"></i>
+                    <span>10-15 Foto</span>
+                </div>
+                <div class="fs-item">
+                    <i class="ph ph-gift"></i>
+                    <span>Aksesoris</span>
+                </div>
+                <div class="fs-item">
+                    <i class="ph ph-music-note"></i>
+                    <span>Link musik</span>
+                </div>
+                <div class="fs-item">
+                    <i class="ph ph-qr-code"></i>
+                    <span>Barcode</span>
+                </div>
+            </div>
+
+            <!-- Color Swatches -->
+            <div class="fade-in">
+                <div class="section-label">Pilih warna box</div>
+                <div class="color-swatches">
+                    <div class="swatch-item active">
+                        <div class="swatch-box" style="background-color: #6C351B;"></div>
+                        <span class="swatch-label">Cokelat</span>
+                    </div>
+                    <div class="swatch-item">
+                        <div class="swatch-box" style="background-color: #EAD0B9;"></div>
+                        <span class="swatch-label">Cream</span>
+                    </div>
+                    <div class="swatch-item">
+                        <div class="swatch-box" style="background-color: #FA6EB1;"></div>
+                        <span class="swatch-label">Pink</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <div class="fade-in">
+                <div class="section-label">Deskripsi</div>
+                <p class="detail-desc" id="product-desc">
+                    Reguler Box adalah kotak kenangan dengan ukuran ideal yang menawarkan keseimbangan antara kapasitas dan kepraktisan. Di dalamnya berisi foto, kartu ucapan, dan aksesoris pilihan yang disusun secara rapi dan estetik untuk menciptakan pengalaman yang berkesan. Cocok digunakan untuk berbagai momen spesial seperti ulang tahun, anniversary, atau hadiah untuk orang terdekat. Dengan ukuran yang tidak terlalu kecil maupun besar, Reguler Box menjadi pilihan tepat untuk menyimpan dan menyampaikan kenangan dengan cara yang lebih lengkap dan bermakna.
+                </p>
+            </div>
+            
+        </main>
+
+        <!-- Sticky Bottom Bar -->
+        <div class="bottom-action-bar">
+            <div class="qty-selector">
+                <button class="qty-btn" id="qty-min">-</button>
+                <span class="qty-val" id="qty-val">1</span>
+                <button class="qty-btn" id="qty-plus">+</button>
+            </div>
+            <button class="btn-brown-large" onclick="window.location.href='upload-foto.html'">
+                <i class="ph ph-shopping-bag"></i> Pesan sekarang
+            </button>
+        </div>
+
+    </div>
+    
+    <script src="js/checkout.js"></script>
+</body>
+</html>

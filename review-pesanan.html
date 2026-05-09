@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Pesanan - One Memory</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="checkout-body">
+    <div class="checkout-app-container">
+        <!-- App Header -->
+        <header class="checkout-header">
+            <a href="upload-foto.html" class="checkout-back"><i class="ph ph-arrow-left"></i></a>
+            <div class="checkout-logo">One Memory</div>
+            <div class="checkout-avatar">S</div>
+        </header>
+
+        <main class="checkout-content fade-in">
+            <h1 class="checkout-title" style="margin-bottom: 4px;">Review Pesanan</h1>
+            <p class="checkout-subtitle">Pastikan pesanan mu sudah sesuai</p>
+
+            <div class="review-card fade-in">
+                <div class="review-row">
+                    <span>Produk</span>
+                    <strong id="review-product">Reguler Box</strong>
+                </div>
+                <div class="review-row">
+                    <span>Warna Box</span>
+                    <strong id="review-color">Cokelat</strong>
+                </div>
+                <div class="review-row">
+                    <span>Jumlah Foto</span>
+                    <strong>10 Foto</strong>
+                </div>
+                <div class="review-row">
+                    <span>Kuantitas</span>
+                    <strong id="review-qty">1x</strong>
+                </div>
+                <div class="review-row total">
+                    <span>Total Harga</span>
+                    <span id="review-total">Rp 45.000</span>
+                </div>
+            </div>
+
+            <div class="fade-in" style="font-size: 0.9rem; color: #7B4B36; text-align: center; margin-bottom: 20px;">
+                Dengan menekan tombol selesai, Anda akan diarahkan untuk mengirim bukti transfer via WhatsApp.
+            </div>
+
+        </main>
+
+        <!-- Sticky Bottom Bar -->
+        <div class="bottom-action-bar bottom-action-single">
+            <button class="btn-brown-large" onclick="window.location.href='checkout-success.html'">
+                <i class="ph ph-check-circle"></i> Selesai & Bayar
+            </button>
+        </div>
+
+    </div>
+    
+    <script src="js/checkout.js"></script>
+</body>
+</html>

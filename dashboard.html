@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Kenangan | One Memory</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        /* Dashboard specific styling */
+        body { background-color: var(--bg-light); }
+        .polaroid-caption { 
+            font-family: 'Playfair Display', serif; 
+            font-style: italic; 
+            font-size: 1.1rem; 
+            color: var(--text-muted); 
+            text-align: center; 
+            margin-top: 15px; 
+        }
+        .back-nav { 
+            position: fixed; 
+            top: 20px; 
+            left: 20px; 
+            display: flex; 
+            align-items: center; 
+            gap: 8px; 
+            font-weight: 500; 
+            font-size: 0.9rem; 
+            color: var(--text-dark); 
+            opacity: 0.7; 
+            transition: opacity 0.3s;
+            z-index: 10;
+            background: rgba(244,232,219,0.9);
+            padding: 8px 16px;
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+        }
+        .back-nav:hover { opacity: 1; }
+        .personal-message {
+            max-width: 600px;
+            margin: 0 auto;
+            font-style: italic;
+            color: var(--text-muted);
+            line-height: 1.8;
+        }
+        .dash-footer {
+            background: transparent; 
+            color: var(--text-muted); 
+            text-align: center; 
+            border-top: 1px solid rgba(0,0,0,0.08); 
+            padding: 2rem 0;
+        }
+        .dash-footer p {
+            font-size: 0.8rem;
+        }
+        .dash-footer a {
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="index.html" class="back-nav">
+        <i class="ph ph-arrow-left"></i> Kembali
+    </a>
+
+    <!-- Dashboard Header -->
+    <header class="dashboard-header fade-in" style="position: relative;">
+        <div class="container">
+            <span class="memory-date" style="display:block;">14 Februari 2026</span>
+            <h1 class="recipient-name">Untuk Sarah,</h1>
+            <p class="personal-message">
+                "Setiap detik bersamamu adalah hadiah terindah. Semoga memori ini selalu mengingatkanmu bahwa kamu tak pernah sendiri."
+            </p>
+        </div>
+    </header>
+
+    <!-- Media Grid Gallery -->
+    <main class="container media-grid">
+        <!-- Photo 1 -->
+        <div class="media-card fade-in" style="transition-delay: 0.1s;">
+            <img src="https://images.unsplash.com/photo-1518133505856-3de51d38da70?q=80&w=600&auto=format&fit=crop" alt="Our first trip" loading="lazy">
+            <div class="media-caption">Perjalanan pertama kita</div>
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="media-card fade-in" style="transition-delay: 0.2s;">
+            <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=600&auto=format&fit=crop" alt="Coffee date" loading="lazy">
+            <div class="media-caption">Minggu Pagi dan Kopi</div>
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="media-card fade-in" style="transition-delay: 0.3s;">
+            <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=600&auto=format&fit=crop" alt="Sunset" loading="lazy">
+            <div class="media-caption">Senja di Pantai Kuta</div>
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="media-card fade-in" style="transition-delay: 0.4s;">
+            <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?q=80&w=600&auto=format&fit=crop" alt="Flower" loading="lazy">
+            <div class="media-caption">Kejutan darimu</div>
+        </div>
+
+        <!-- Photo 5 -->
+        <div class="media-card fade-in" style="transition-delay: 0.5s;">
+            <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=600&auto=format&fit=crop" alt="Together" loading="lazy">
+            <div class="media-caption">Hari bahagia itu</div>
+        </div>
+
+        <!-- Photo 6 -->
+        <div class="media-card fade-in" style="transition-delay: 0.6s;">
+            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?q=80&w=600&auto=format&fit=crop" alt="Adventure" loading="lazy">
+            <div class="media-caption">Petualangan kecil kita</div>
+        </div>
+    </main>
+
+    <footer class="dash-footer">
+        <p>Dibuat dengan <i class="ph-fill ph-heart" style="color: var(--secondary-color);"></i> melalui <a href="index.html">One Memory</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
